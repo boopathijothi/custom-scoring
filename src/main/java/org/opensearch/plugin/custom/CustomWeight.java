@@ -67,7 +67,8 @@ public class CustomWeight extends Weight {
 
                     return (innerScorer.score() * boost);
                 } else {
-                    return innerScorer.score();
+                    float penaltyBoost = 0.0f;
+                    return (innerScorer.score()*penaltyBoost);
                 }
             }
         };

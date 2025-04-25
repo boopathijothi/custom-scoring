@@ -68,18 +68,23 @@ The Makefile simplifies all operations. Use the following commands:
 
    ```bash
    POST /products/_bulk
-    { "index": { "_id": 1 } }
-    { "title": "Wireless Mouse", "price": 100.0 }
-    { "index": { "_id": 2 } }
-    { "title": "Wireless Mouse", "price": 50.0 }
-    { "index": { "_id": 3 } }
-    { "title": "Wireless Mouse", "price": 25.0 }
-    { "index": { "_id": 4 } }
-    { "title": "Gaming Mouse", "price": 80.0 }
-    { "index": { "_id": 5 } }
-    { "title": "Wireless Mouse Holder", "price": 1.0 }
-    { "index": { "_id": 6 } }
-    { "title": "Wireless Mouse", "price": 1.0 }
+   { "index": { "_id": 1 } }
+   { "title": "Wireless Mouse", "price": 100.0 }
+   { "index": { "_id": 2 } }
+   { "title": "Wireless Mouse", "price": 50.0 }
+   { "index": { "_id": 3 } }
+   { "title": "Wireless Mouse", "price": 25.0 }
+   { "index": { "_id": 4 } }
+   { "title": "Gaming Mouse", "price": 80.0 }
+   { "index": { "_id": 5 } }
+   { "title": "Wireless Mouse Holder", "price": 1.0 }
+   { "index": { "_id": 6 } }
+   { "title": "Wireless Mouse", "price": 1.0 }
+   { "index": { "_id": 7 } }
+   { "title": "Wireless Mouse" }
+   { "index": { "_id": 8 } }
+   { "title": "Wireless Mouse", "price": null }
+
 
 3. ** Validation Query *
    ```bash

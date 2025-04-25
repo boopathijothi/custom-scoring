@@ -5,7 +5,7 @@
  * this file be licensed under the Apache-2.0 license or a
  * compatible open source license.
  */
-package org.example.path.to.plugin;
+package org.opensearch.plugin.custom;
 
 import com.carrotsearch.randomizedtesting.annotations.ThreadLeakScope;
 import org.apache.hc.core5.http.ParseException;
@@ -28,7 +28,7 @@ public class RenamePluginIT extends OpenSearchIntegTestCase {
 
     @Override
     protected Collection<Class<? extends Plugin>> nodePlugins() {
-        return Collections.singletonList(RenamePlugin.class);
+        return Collections.singletonList(RelevancyPlugin.class);
     }
 
     public void testPluginInstalled() throws IOException, ParseException {

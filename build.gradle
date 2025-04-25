@@ -7,16 +7,16 @@ apply plugin: 'opensearch.opensearchplugin'
 apply plugin: 'opensearch.yaml-rest-test'
 apply plugin: 'opensearch.pluginzip'
 
-def pluginName = 'rename'
+def pluginName = 'customscoring'
 def pluginDescription = 'Custom plugin'
-def packagePath = 'org.example'
-def pathToPlugin = 'path.to.plugin'
-def pluginClassName = 'RenamePlugin'
-group = "RenameGroup"
+def packagePath = 'org.opensearch'
+def pathToPlugin = 'plugin.custom'
+def pluginClassName = 'RelevancyPlugin'
+group = "RelevancyGroup"
 
 java {
-    targetCompatibility = JavaVersion.VERSION_21
-    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_17
 }
 
 tasks.register("preparePluginPathDirs") {
@@ -68,7 +68,7 @@ validateNebulaPom.enabled = false
 
 buildscript {
     ext {
-        opensearch_version = System.getProperty("opensearch.version", "3.0.0-SNAPSHOT")
+        opensearch_version = System.getProperty("opensearch.version", "2.19.1")
     }
 
     repositories {

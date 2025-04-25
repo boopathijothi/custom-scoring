@@ -9,6 +9,6 @@ package org.opensearch.plugin.custom;
 
 import org.opensearch.test.OpenSearchTestCase;
 
-public class RenameTests extends OpenSearchTestCase {
+public class RelevancyPluginTests extends OpenSearchTestCase {
     // Add unit tests for your plugin
 }
